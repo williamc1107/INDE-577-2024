@@ -32,10 +32,8 @@ This segment provides a primer on reinforcement learning techniques:
 
 ### Datasets
 We utilize various datasets in our projects, including:
-- **Albumlist**: A compilation of the top 500 albums of all time.
-- **Housing**: This dataset includes details on housing prices and other related data.
-- **MNIST Train and Test**: These are the training and testing sets for the MNIST database of handwritten digits.
-- **Spotify 2023**: A dataset featuring the most streamed tracks on Spotify for the year 2023.
+- **Titanic**: Details the demographics and passenger information of those aboard the tragic maiden voyage.
+
 
 ## Navigating the Repository
 To review our work, please visit the folders corresponding to supervised learning, unsupervised learning, reinforcement learning, and datasets. Each directory includes detailed README.md files and Jupyter notebooks that showcase our practical implementations.
