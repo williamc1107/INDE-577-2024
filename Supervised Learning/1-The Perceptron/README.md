@@ -20,6 +20,10 @@ Our accompanying Jupyter notebook walks you through the essential steps:
 - **Visualization**: To aid in interpretation, we provide visualizations such as a confusion matrix and a precision-recall curve, offering a clear view of the model's performance.
 
 ## Conclusion
-The application of the Perceptron to the Titanic dataset not only highlights the model's strengths but also its limitations. While the model achieves a reasonable accuracy of 75.4%, the visualizations and metrics reveal areas for improvement, particularly in reducing false positives. This project serves as a practical guide for those new to machine learning, illustrating the process from data preparation to model evaluation, with clear insights into the workings of an elementary yet instructive algorithm.
+The Perceptron, with its foundational simplicity, showcases a commendable performance in discerning the survival outcomes of the Titanic tragedy. As a crucial stepping stone in the realm of machine learning and neural networks, it lays the groundwork for understanding classification dynamics. While it provides a decent baseline, there is ample room for improvement through further feature engineering and the potential development of more sophisticated models that could enhance prediction capabilities for such binary classification tasks.
 
-**Dive into the Jupyter notebook and explore the nuanced application of the Perceptron model to a dataset that has captivated data enthusiasts for years!**
+We encourage you to interact with the notebook, adjust the hyperparameters, and probe deeper into the Perceptron's strengths and weaknesses within the scope of binary classification.
+
+Embark on your journey of discovery with the Perceptron model!
+
+**Embark on your journey of discovery with the Perceptron model!**
