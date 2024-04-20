@@ -1,7 +1,7 @@
 # The Perceptron - A Classic Approach to Binary Classification
 
 ## Introduction
-This project presents a thorough examination of the Perceptron, a classical linear binary classifier that's renowned for its effectiveness in clear-cut, linearly separable scenarios. Its simplicity is deceptive, as it lays the groundwork for understanding more complex machine learning algorithms.
+This project presents a thorough examination of the Perceptron, a classical single-layer linear binary classifier that's renowned for its effectiveness in clear-cut, linearly separable scenarios. Its simplicity is deceptive, as it lays the groundwork for understanding more complex machine learning algorithms.
 
 ## Dataset and Problem Statement
 In our study, we employ the Perceptron to the famous Titanic dataset, which encapsulates the fateful journey of the Titanic passengers. Our task is to predict a binary outcome: did a passenger survive or not, based on features such as passenger class, sex, age, and ticket fare.

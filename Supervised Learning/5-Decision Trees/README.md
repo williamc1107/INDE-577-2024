@@ -1,45 +1,27 @@
-# INDE 577 Final Project - Data Science & Machine Learning
-**Instructor:** Randy R. Davila
+# The Perceptron - A Classic Approach to Binary Classification
 
-## Course Overview
-This repository hosts the final project for INDE 577, a course focusing on Data Science and Machine Learning taught by Randy R. Davila. We've covered an extensive array of topics this semester, ranging from different types of learning algorithms to hands-on programming in Python and applying best practices in data science.
+## Introduction
+This project presents a thorough examination of the Perceptron, a classical linear binary classifier that's renowned for its effectiveness in clear-cut, linearly separable scenarios. Its simplicity is deceptive, as it lays the groundwork for understanding more complex machine learning algorithms.
 
-## Repository Organization
-Our project repository is divided into four primary sections, each dedicated to specific areas of machine learning and containing comprehensive implementations and analysis:
+## Dataset and Problem Statement
+In our study, we employ the Perceptron to the famous Titanic dataset, which encapsulates the fateful journey of the Titanic passengers. Our task is to predict a binary outcome: did a passenger survive or not, based on features such as passenger class, sex, age, and ticket fare.
 
-### Supervised Learning
-This segment explores a variety of supervised learning algorithms, each detailed within its own subdirectory:
-- **The Perceptron**: A fundamental linear classifier that provides an introduction to neural network concepts.
-- **Gradient Descent**: An essential optimization algorithm that iteratively reduces a cost function, crucial for many learning models.
-- **Linear Regression**: A method used to predict continuous variables through the relationship between dependent and independent variables.
-- **Logistic Regression**: This technique handles binary and multiclass classification problems by estimating probabilities of different classes.
-- **Neural Networks**: Concentrating on multi-layer perceptrons (MLP), these networks are designed to model complex patterns in data.
-- **K-Nearest Neighbors (KNN)**: A non-parametric method that assigns classifications based on the closest training examples in the data space.
-- **Decision Trees**: These models are utilized for both classification and regression, making predictions based on learned decision rules.
-- **Ensemble Methods**: Strategies like Random Forest that enhance model accuracy by combining the outputs from various models.
+## Problem Simplification
+We streamline the problem to binary classification, aligning perfectly with the Perceptron's capabilities. By focusing on features with the highest predictive power, we simplify our analysis without sacrificing the integrity of our model's predictive potential.
 
-Each subdirectory includes comprehensive documentation, Jupyter notebooks for implementation, and discussions on the algorithms' applications and performance.
+## Implementation
+Our accompanying Jupyter notebook walks you through the essential steps:
+- **Data Preprocessing**: We start by loading the data, handling missing values, and converting categorical variables into numerical ones suitable for model ingestion.
+- **Binary Classification Adaptation**: The Titanic dataset is adapted for binary classification, with 'survival' as the target variable.
+- **Feature Selection**: We judiciously select features that contribute most significantly to a passenger's chance of survival.
+- **Data Division**: We divide the data into training and testing subsets, ensuring our model can be both trained and validated effectively.
+- **Perceptron Modeling**: The model is then constructed with methods for training on the dataset and making predictions.
+- **Model Training and Evaluation**: After training, we assess the model's accuracy, precision, recall, and present a confusion matrix to evaluate its predictive performance.
+- **Visualization**: To aid in interpretation, we provide visualizations such as a confusion matrix and a precision-recall curve, offering a clear view of the model's performance.
 
-### Unsupervised Learning
-In this section, we explore techniques used when labels are not available:
-- **k-Means Clustering**: A method to group data points into clusters.
-- **DBSCAN**: This stands for Density-Based Spatial Clustering of Applications with Noise.
-- **Principal Component Analysis (PCA)**: Used for reducing dimensionality and extracting features.
+## Conclusion
+The Perceptron, with its foundational simplicity, showcases a commendable performance in discerning the survival outcomes of the Titanic tragedy. As a crucial stepping stone in the realm of machine learning and neural networks, it lays the groundwork for understanding classification dynamics. While it provides a decent baseline, there is ample room for improvement through further feature engineering and the potential development of more sophisticated models that could enhance prediction capabilities for such binary classification tasks.
 
-### Reinforcement Learning
-This segment provides a primer on reinforcement learning techniques:
-- **Tabular Reinforcement Learning**: Basic concepts and implementations of reinforcement learning.
+We encourage you to interact with the notebook, adjust the hyperparameters, and probe deeper into the Perceptron's strengths and weaknesses within the scope of binary classification.
 
-### Datasets
-We utilize various datasets in our projects, including:
-- **Albumlist**: A compilation of the top 500 albums of all time.
-- **Housing**: This dataset includes details on housing prices and other related data.
-- **MNIST Train and Test**: These are the training and testing sets for the MNIST database of handwritten digits.
-- **Spotify 2023**: A dataset featuring the most streamed tracks on Spotify for the year 2023.
-
-## Navigating the Repository
-To review our work, please visit the folders corresponding to supervised learning, unsupervised learning, reinforcement learning, and datasets. Each directory includes detailed README.md files and Jupyter notebooks that showcase our practical implementations.
-
-We appreciate your interest in our project. The detailed code explanations and analyses are located in the specific subdirectories, designed to provide insight and showcase our organization skills in data science implementations.
-
-**Note:** This README provides an overview of our repository's content.
+**Embark on your journey of discovery with the Perceptron model!**
