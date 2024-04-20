@@ -24,6 +24,4 @@ The Perceptron, with its foundational simplicity, showcases a commendable perfor
 
 We encourage you to interact with the notebook, adjust the hyperparameters, and probe deeper into the Perceptron's strengths and weaknesses within the scope of binary classification.
 
-Embark on your journey of discovery with the Perceptron model!
-
 **Embark on your journey of discovery with the Perceptron model!**
