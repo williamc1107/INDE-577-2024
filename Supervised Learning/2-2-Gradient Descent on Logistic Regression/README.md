@@ -1,4 +1,4 @@
-### Gradient Descent - Logistic Regression on the Titanic Dataset
+# Gradient Descent - Logistic Regression on the Titanic Dataset
 
 ## Introduction
 In this project, we apply logistic regression, facilitated by gradient descent, to the historical Titanic dataset. Logistic regression is well-suited for binary classification tasks such as predicting survival outcomes from disaster data.
