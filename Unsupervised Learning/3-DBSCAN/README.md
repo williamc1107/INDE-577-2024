@@ -37,7 +37,7 @@ The "make_moons" dataset is utilized in this project to showcase DBSCAN's capabi
 ## How to Use
 
 To interact with the DBSCAN Clustering Jupyter notebook:
-1. Open the notebook file `DBSCAN_Clustering.ipynb`.
+1. Open the notebook file.
 2. Follow the step-by-step instructions and code comments to execute the DBSCAN clustering implementation.
 3. Observe how DBSCAN identifies clusters and handles noise in the "make_moons" dataset.
 4. Experiment with varying `eps` and `minPts` values to see their impact on the clustering results.
