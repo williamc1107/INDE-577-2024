@@ -1,27 +1,44 @@
-# The Perceptron - A Classic Approach to Binary Classification
+# Decision Trees and Regression Trees on the Titanic Dataset
 
 ## Introduction
-This project presents a thorough examination of the Perceptron, a classical linear binary classifier that's renowned for its effectiveness in clear-cut, linearly separable scenarios. Its simplicity is deceptive, as it lays the groundwork for understanding more complex machine learning algorithms.
 
-## Dataset and Problem Statement
-In our study, we employ the Perceptron to the famous Titanic dataset, which encapsulates the fateful journey of the Titanic passengers. Our task is to predict a binary outcome: did a passenger survive or not, based on features such as passenger class, sex, age, and ticket fare.
+This Jupyter notebook delves into Decision Trees and Regression Trees, utilizing them to predict survival on the Titanic. Decision Trees are powerful algorithms that can be used for classification and regression tasks. They model decisions and their possible consequences, including chance event outcomes, resource costs, and utility.
 
-## Problem Simplification
-We streamline the problem to binary classification, aligning perfectly with the Perceptron's capabilities. By focusing on features with the highest predictive power, we simplify our analysis without sacrificing the integrity of our model's predictive potential.
+## Algorithm
+
+- **Decision Trees**:
+  - Begin at the root node with the complete dataset.
+  - Identify the most informative feature to split the data.
+  - Split data recursively based on feature values.
+  - Halt splitting when certain criteria are met, such as maximum depth or node purity.
+  - Assign predictions to leaf nodes based on majority class or mean/median outcomes.
+
+- **Adaptation to the Titanic Dataset**:
+  - For classification, we predict passenger survival based on features like class, sex, and age.
+  - The tree will reflect the probabilistic nature of survival, with decision paths leading to survival or non-survival leaf nodes.
+
+## Advantages and Disadvantages
+
+- **Advantages**:
+  - High interpretability, providing a clear visualization of the decision-making process.
+  - Capable of handling both numerical and categorical data.
+  - No assumption of feature independence, unlike some other algorithms.
+  - No requirement for feature scaling.
+
+- **Disadvantages**:
+  - Can easily overfit to the training data, particularly if the tree is allowed to grow complex without pruning.
+  - Small changes in the data can lead to different splits, making the model potentially unstable.
+  - Decision trees are often biased towards classes with a larger number of instances.
+  - They have limitations in capturing complex relationships due to their hierarchical nature.
 
 ## Implementation
-Our accompanying Jupyter notebook walks you through the essential steps:
-- **Data Preprocessing**: We start by loading the data, handling missing values, and converting categorical variables into numerical ones suitable for model ingestion.
-- **Binary Classification Adaptation**: The Titanic dataset is adapted for binary classification, with 'survival' as the target variable.
-- **Feature Selection**: We judiciously select features that contribute most significantly to a passenger's chance of survival.
-- **Data Division**: We divide the data into training and testing subsets, ensuring our model can be both trained and validated effectively.
-- **Perceptron Modeling**: The model is then constructed with methods for training on the dataset and making predictions.
-- **Model Training and Evaluation**: After training, we assess the model's accuracy, precision, recall, and present a confusion matrix to evaluate its predictive performance.
-- **Visualization**: To aid in interpretation, we provide visualizations such as a confusion matrix and a precision-recall curve, offering a clear view of the model's performance.
+
+- **Decision Tree for Classification**:
+  - Employ the Titanic dataset to predict the survival of passengers. Features include socioeconomic class, sex, age, and number of siblings/spouses aboard.
+
+- **Regression Tree**:
+  - While the Titanic dataset is typically used for classification, we can adapt it to a regression framework by predicting the age of passengers based on their socioeconomic class, number of relatives on board, fare paid, and cabin number.
 
 ## Conclusion
-The Perceptron, with its foundational simplicity, showcases a commendable performance in discerning the survival outcomes of the Titanic tragedy. As a crucial stepping stone in the realm of machine learning and neural networks, it lays the groundwork for understanding classification dynamics. While it provides a decent baseline, there is ample room for improvement through further feature engineering and the potential development of more sophisticated models that could enhance prediction capabilities for such binary classification tasks.
 
-We encourage you to interact with the notebook, adjust the hyperparameters, and probe deeper into the Perceptron's strengths and weaknesses within the scope of binary classification.
-
-**Embark on your journey of discovery with the Perceptron model!**
+The notebook provides a practical application of Decision Trees and Regression Trees using the Titanic dataset, highlighting their strengths and weaknesses. By predicting survival and passenger age, we demonstrate the versatility and interpretability of tree-based models. This application serves as a valuable exercise in understanding the dynamics of model decision-making and the implications of tree structure on predictive performance.
