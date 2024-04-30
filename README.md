@@ -23,17 +23,8 @@ Each subdirectory includes comprehensive documentation, Jupyter notebooks for im
 ### Unsupervised Learning
 In this section, we explore techniques used when labels are not available:
 - **k-Means Clustering**: A method to group data points into clusters.
-- **DBSCAN**: This stands for Density-Based Spatial Clustering of Applications with Noise.
 - **Principal Component Analysis (PCA)**: Used for reducing dimensionality and extracting features.
-
-### Reinforcement Learning
-This segment provides a primer on reinforcement learning techniques:
-- **Tabular Reinforcement Learning**: Basic concepts and implementations of reinforcement learning.
-
-### Datasets
-We utilize various datasets in our projects, including:
-- **Titanic**: Details the demographics and passenger information of those aboard the tragic maiden voyage.
-
+- **DBSCAN**: This stands for Density-Based Spatial Clustering of Applications with Noise.
 
 ## Navigating the Repository
 To review our work, please visit the folders corresponding to supervised learning, unsupervised learning, reinforcement learning, and datasets. Each directory includes detailed README.md files and Jupyter notebooks that showcase our practical implementations.
