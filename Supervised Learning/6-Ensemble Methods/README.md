@@ -1,27 +1,48 @@
-# The Perceptron - A Classic Approach to Binary Classification
+# Ensemble Methods in Machine Learning
 
 ## Introduction
-This project presents a thorough examination of the Perceptron, a classical linear binary classifier that's renowned for its effectiveness in clear-cut, linearly separable scenarios. Its simplicity is deceptive, as it lays the groundwork for understanding more complex machine learning algorithms.
 
-## Dataset and Problem Statement
-In our study, we employ the Perceptron to the famous Titanic dataset, which encapsulates the fateful journey of the Titanic passengers. Our task is to predict a binary outcome: did a passenger survive or not, based on features such as passenger class, sex, age, and ticket fare.
+In this Jupyter notebook, we delve into Ensemble Methods, which combine multiple models to bolster predictive accuracy in machine learning. Specifically, we'll be exploring Bagging and Random Forest techniques, applied to the California housing dataset.
 
-## Problem Simplification
-We streamline the problem to binary classification, aligning perfectly with the Perceptron's capabilities. By focusing on features with the highest predictive power, we simplify our analysis without sacrificing the integrity of our model's predictive potential.
+## Ensemble Methods Overview
+
+Ensemble methods leverage the power of multiple machine learning models to create a more accurate and robust predictive system. We will focus on two types:
+
+### Bagging
+Bagging, short for Bootstrap Aggregating, works by training multiple independent models on different subsets of the data. The final prediction is obtained by averaging the predictions of all models for regression tasks or by majority voting for classification tasks.
+
+#### Advantages:
+- Reduces variance and overfitting.
+- Improves model stability and accuracy.
+- Simple to implement with parallel training capabilities.
+
+#### Disadvantages:
+- Bias remains largely unaffected.
+- Model complexity can increase with the number of estimators.
+- Managing a large ensemble can be computationally expensive.
+
+### Random Forest
+A Random Forest is an extension of Bagging, applied to decision tree models. It creates a forest of trees where each tree is trained on a random subset of the data and features, resulting in high-performing and diversified models.
+
+#### Advantages:
+- Often delivers high performance with minimal tuning.
+- Naturally performs feature selection, providing insights into feature importance.
+- Can be trained in parallel for large datasets.
+
+#### Disadvantages:
+- More complex than individual decision trees, leading to less interpretability.
+- Slower predictions due to the aggregation of multiple trees.
 
 ## Implementation
-Our accompanying Jupyter notebook walks you through the essential steps:
-- **Data Preprocessing**: We start by loading the data, handling missing values, and converting categorical variables into numerical ones suitable for model ingestion.
-- **Binary Classification Adaptation**: The Titanic dataset is adapted for binary classification, with 'survival' as the target variable.
-- **Feature Selection**: We judiciously select features that contribute most significantly to a passenger's chance of survival.
-- **Data Division**: We divide the data into training and testing subsets, ensuring our model can be both trained and validated effectively.
-- **Perceptron Modeling**: The model is then constructed with methods for training on the dataset and making predictions.
-- **Model Training and Evaluation**: After training, we assess the model's accuracy, precision, recall, and present a confusion matrix to evaluate its predictive performance.
-- **Visualization**: To aid in interpretation, we provide visualizations such as a confusion matrix and a precision-recall curve, offering a clear view of the model's performance.
+
+Using the California housing dataset, we will implement Bagging and Random Forest regressors to predict housing prices. This dataset is rich with features such as median income, housing age, average rooms, average bedrooms, population, average occupancy, latitude, and longitude, all of which influence the median house value in a district.
+
+### Bagging
+We will use a Bagging regressor with decision trees as the base learner to predict the median house value.
+
+### Random Forest
+We will also employ a Random Forest regressor to predict the same target variable, taking advantage of its inherent feature selection capabilities to possibly improve upon the Bagging regressor's performance.
 
 ## Conclusion
-The Perceptron, with its foundational simplicity, showcases a commendable performance in discerning the survival outcomes of the Titanic tragedy. As a crucial stepping stone in the realm of machine learning and neural networks, it lays the groundwork for understanding classification dynamics. While it provides a decent baseline, there is ample room for improvement through further feature engineering and the potential development of more sophisticated models that could enhance prediction capabilities for such binary classification tasks.
 
-We encourage you to interact with the notebook, adjust the hyperparameters, and probe deeper into the Perceptron's strengths and weaknesses within the scope of binary classification.
-
-**Embark on your journey of discovery with the Perceptron model!**
+Our exploration into Bagging and Random Forest regressors with the California housing dataset aims to highlight the strengths and practical applications of ensemble methods. By comparing the performance of these methods, we will assess their viability for real-world regression tasks such as housing price prediction, acknowledging their advantages in accuracy and robustness against the trade-offs in complexity and interpretability.
