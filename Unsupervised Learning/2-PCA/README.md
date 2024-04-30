@@ -16,14 +16,14 @@ PCA operates through several key steps:
 
 ## Advantages and Disadvantages
 
-#### Advantages:
+### Advantages:
 
 - **Dimensionality Reduction**: PCA reduces dataset dimensionality while preserving most of the variance.
 - **Noise Reduction**: It can remove noise and irrelevant information from data.
 - **Visualization**: PCA enables high-dimensional data visualization in a lower-dimensional space.
 - **Feature Extraction**: It can extract meaningful features or components from data.
 
-#### Disadvantages:
+### Disadvantages:
 
 - **Linearity Assumption**: PCA assumes linear relationships between variables and may not perform well for nonlinear data.
 - **Interpretability**: Interpreting principal components may not always be straightforward.
